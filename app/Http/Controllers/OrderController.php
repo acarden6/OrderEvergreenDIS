@@ -53,7 +53,7 @@ class OrderController extends Controller
 
         $api_url = config('api.url');
         $input = $request->all();
-        // dd($input);
+
         $response = Http::post($api_url . '/orders', [
             'exit_date' => $input['exit_date'],
             'products' => [

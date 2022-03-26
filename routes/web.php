@@ -13,6 +13,6 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-Route::get('/', [OrderController::class, 'index'])->name("home.index");
+#Route::get('/', [OrderController::class, 'index'])->name("home.index");
 Route::get('/order/create', [OrderController::class, 'create'])->name("order.create");
 Route::post('/order/save', [OrderController::class, 'save'])->name("order.save");
